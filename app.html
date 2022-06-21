@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	
+	<title>Mayah's Restaurant | app</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div id="design">
+				<h1>ViewPoint Bar and Restarant</h1>
+			</div>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About Us</a></li>
+						<li class="dropdown">
+							<a href="Services.html">Services &#8681;</a>
+							<div class="dropdown-content">
+								<a href="#cooking">Cooking</a>
+     						 	<a href="#wine">Wine & Drinks</a>
+     			 				<a href="#wedding">Wedding Receptions</a>
+							</div>
+						</li>
+						<li class="current"><a href="app.html">Apps</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</nav>
+		</div>
+	</header>
+
+	
+	<section id="main">
+		<div class="container">
+			<article id="art">
+				<h2 style="color: green; text-align: center;">This is the Simple math calculator</h2>
+				<div id="calc">
+					<div id="screen"></div>
+					<table>
+					
+			      		<tbody>
+							<tr class="orange">
+								<td onclick="clearScr()">AC</td>
+			          				<td onclick="sendNum('*0.01')">%</td>
+			          				<td onclick="sendNum('/')">/</td>
+							</tr>
+							<tr class="orange">
+								<td onclick="sendNum('+')">+</td>
+								<td onclick="sendNum('-')">-</td>
+								<td onclick="sendNum('*')">x</td>
+							</tr>
+							<tr>
+						    	<td onclick="sendNum('7')">7</td>
+						    	<td onclick="sendNum('8')">8</td>
+						    	<td onclick="sendNum('9')">9</td>
+							</tr>
+							<tr>
+								<td onclick="sendNum('4')">4</td>
+								<td onclick="sendNum('5')">5</td>
+								<td onclick="sendNum('6')">6</td>
+							</tr>
+							<tr>
+			      				<td onclick="sendNum('1')">1</td>
+								<td onclick="sendNum('2')">2</td>
+								<td onclick="sendNum('3')">3</td>
+							</tr>
+							<tr>
+			      				<td onclick="sendNum('.')">.</td>
+								<td onclick="sendNum('0')">0</td>
+								<td onclick="equalTo()">=</td>
+							</tr>	
+						</tbody>
+					</table>
+				</div>
+			</article>
+		
+	
+
+			<aside class="sidebar">
+
+				<h2 style="color: green; text-align: center;">This is the age calculator</h2>
+				
+				<div class="ageCalculator">
+					<h2 style="color: #32A80F" align="center"> Calculate Age from Date of Birth <br> <br> </h2> 
+
+					<!-- Choose a date and enter in input field -->
+					<b> Enter Date of Birth: <input type=date id="DOB"> </b>
+					<span id = "message" style="color:red"> </span> <br><br>  
+
+					<!-- Choose a date and enter in input field -->
+					<button type="submit" onclick = "ageCalculator()"> Calculate age </button> <br><br>
+					<h3 style="color: #32A80F;" id="result" align="center"></h3> 
+				</div>
+			</aside>
+		</div>
+	</section>
+
+
+		
+	<footer >
+		<p>Mayah's Restaurant, copyright &copy; 2019 </p>
+		<p>Email Us at <a href="hellensingbeh@gmail.com">viewpoint@gmail.com</a></p>
+		<p>This Page was developed by our Manager: Kwesi Johnson</p>
+	</footer>
+	<script src="js/calc.js"></script>
+	<script src="js/age.js"></script>
+</body>
+</html>
